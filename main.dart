@@ -97,11 +97,17 @@ void addSession() {
     print("${e.eventId}: ${e.title}");
   }
 
-  //Ask user to choose an event for this session
+  //Ask user to choose an event
   stdout.write("Enter Event ID for this session: ");
   int eventId = int.parse(stdin.readLineSync()!);
 
-  // Ask for speaker ID
+  //Check if event ID exists
+  if (!events.any((e) => e.eventId == eventId)) {
+    print("Event ID not found.");
+    return;
+  }
+
+  //Ask for speaker ID
   stdout.write("Enter Speaker ID: ");
   int speakerId = int.parse(stdin.readLineSync()!);
 
@@ -120,6 +126,7 @@ void addSession() {
 
   //Add the session
   sessions.add(Session(sessionId, eventId, speakerId, name, time, capacity));
+
   print("Session '$name' added successfully for Event ID $eventId.");
 }
 
