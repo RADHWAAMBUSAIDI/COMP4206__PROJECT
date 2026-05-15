@@ -1,0 +1,49 @@
+{
+  "users": {
+    "1": {
+      "id": "1",
+      "name": "Ahmed Al-Balushi",
+      "email": "ahmed@squ.edu.om",
+      "role": "Attendee",
+      "age": 22
+    },
+    "2": {
+      "id": "2",
+      "name": "Sara Al-Harthi",
+      "email": "sara@gmail.com",
+      "role": "Organizer",
+      "age": 25
+    },
+    "3": {
+      "id": "3",
+      "name": "Mohammed Al-Rawahi",
+      "email": "mohammed@yahoo.com",
+      "role": "Attendee",
+      "age": 20
+    }
+  },
+
+  "events": {
+    "ev01": {
+      "id": "ev01",
+      "title": "Tech Innovation Summit",
+      "date": "Apr 15, 2026",
+      "time": "15:30",
+      "location": "SQU, Muscat",
+      "attendees": 245,
+      "capacity": 300,
+      "image": "assets/images/event1.png"
+    },
+
+    "ev02": {
+      "id": "ev02",
+      "title": "Mobile Dev Workshop",
+      "date": "Apr 22, 2026",
+      "time": "17:00",
+      "location": "College of Science",
+      "attendees": 82,
+      "capacity": 100,
+      "image": "assets/images/event2.png"
+    }
+  }
+}
